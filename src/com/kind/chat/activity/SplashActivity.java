@@ -52,7 +52,7 @@ public class SplashActivity extends BaseActivity {
 					EMChatManager.getInstance().loadAllConversations();
 					long costTime = System.currentTimeMillis() - start;
 					//等待sleeptime时长
-					if (sleepTime - costTime > 2000) {
+					if (sleepTime - costTime > 0) {
 						try {
 							Thread.sleep(sleepTime - costTime);
 						} catch (InterruptedException e) {
